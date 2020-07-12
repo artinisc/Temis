@@ -1,0 +1,110 @@
+body{
+    margin: 0 auto;
+    background-color: white;
+    background-size: 100%;
+}
+
+header{
+    height: 90px;
+}
+
+#logo-topo{
+    background-image: url(../img/logo60.png);
+    float: left;
+    height: 70px;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 2%;
+    background-repeat: no-repeat;
+}
+
+.inf-topo{
+    float: right;
+    height: 80px;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 2%;
+}
+
+.tb-topo{
+    float: right;
+    height: 60px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.centro{
+    min-height: 75vh;
+}
+
+.lateral-menus{
+    float: left;
+    min-height: 75vh;
+    width: 20%;
+    min-width: 200px;
+}
+
+.btn{
+   display: block; 
+   padding: 16px 20px;
+   position: relative;
+}
+
+.btn:before{
+   content: ""; 
+   position: absolute;
+   width: 14px;
+   height: 14px;
+   left: 20px;
+   bottom: -7px;
+   transform: rotate(45deg);
+}
+
+.smenu{
+   overflow: hidden; 
+   transition: max-height 0.3s;
+   max-height: 0;
+}
+
+.smenu a{
+    display: block;
+    padding: 16px 26px;
+    margin: 4px 0;
+    position: relative;
+}
+
+.smenu a:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover:before{
+    opacity: 1;
+}
+
+.item:target .smenu{
+    max-height: 10em;
+}
+
+.conteudo{
+    float: right;
+    min-height: 75vh;
+    width: 79%;
+    min-width: 500px;
+}
+
+footer{
+    height: 40px;
+}
+
+.dados-dev{
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 9%;
+}
