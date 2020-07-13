@@ -8,26 +8,38 @@
     <div class="pesquisa">
         <form method="POST" action="{{ route('tUsuario.busca') }}">
             {{ csrf_field() }}
-            <fieldset>
-                <div>
-                    <label for="nome">Nome</label>
-                    <input name="nome" type="text">  
-                </div>   
-                <div>
-                    <label for="departamento">Departamento</label>
-                    <select name="departamento">
-                        <option value="vazio"></option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Cobranca">Cobranca</option>
-                        <option value="Juridico">Juridico</option>
-                        <option value="RH">RH</option>
-                        <option value="TI">TI</option>
-                    </select>
-                </div> 
-                <button type="submit">Buscar</button>
-            </fieldset>
+            <table class="campos-processo">
+                <tbody>
+                    <tr class="linhas-processo">
+                        <td>
+                            <label for="nome">Nome</label>
+                            <br>
+                            <input name="nome" type="text">  
+                        </td>   
+                        <td>
+                            <label for="departamento">Departamento</label>
+                            <br>
+                            <select name="departamento">
+                                <option value="vazio"></option>
+                                <option value="Administrativo">Administrativo</option>
+                                <option value="Cobranca">Cobranca</option>
+                                <option value="Juridico">Juridico</option>
+                                <option value="RH">RH</option>
+                                <option value="TI">TI</option>
+                            </select>
+                        </td> 
+                        <td>  
+                            <label for="btn"></label>
+                            <br> 
+                            <button type="submit">Buscar</button>
+                        </td>
+                    </tr>  
+                </tbody>  
+            </table>         
         </form>
     </div>
+    <br>
+    <br>
     <div class="lista">
         <table class="tb-topo">
             <thead>
@@ -42,7 +54,7 @@
                 @foreach ($items as $usuario)
                     <tr>
                         <td>{{ $usuario->id }}</td>
-                        <td>{{ $usuario->name }}</td>
+                        <td><a href="{{ route('usuario.edit', $usuario) }}">{{ $usuario->name }}</a></td>
                         <td>{{ $usuario->email }}</td>
                         <td>{{ $usuario->departamento }}</td>
                     </tr>

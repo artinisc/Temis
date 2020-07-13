@@ -8,27 +8,41 @@
     <div class="pesquisa">
         <form method="POST" action="{{ route('tProcesso.busca') }}">
             {{ csrf_field() }}
-            <fieldset>
-                <div>
-                    <label for="codigo">Codigo</label>
-                    <input name="codigo" type="text">  
-                </div>
-                <div>
-                    <label for="cnj">CNJ</label>
-                    <input name="cnj" type="text">  
-                </div>
-                <div>
-                    <label for="nomereu">Nome Réu</label>
-                    <input name="nomereu" type="text">  
-                </div>
-                <div>
-                    <label for="docreu">CPF/CNPJ</label>
-                    <input name="docreu" type="text">  
-                </div>
-                <button type="submit">Buscar</button>
-            </fieldset>
+            <table class="campos-processo">
+                <tbody>
+                    <tr class="linhas-processo">
+                        <td>
+                            <label for="codigo">Codigo</label>
+                            <br>
+                            <input name="codigo" type="text">  
+                        </td>
+                        <td>
+                            <label for="cnj">CNJ</label>
+                            <br>
+                            <input name="cnj" type="text">  
+                        </td>
+                        <td>
+                            <label for="nomereu">Nome Réu</label>
+                            <br>
+                            <input name="nomereu" type="text">  
+                        </td>
+                        <td>
+                            <label for="docreu">CPF/CNPJ</label>
+                            <br>
+                            <input name="docreu" type="text">  
+                        </td>
+                        <td>
+                            <label for="btn"></label>
+                            <br>
+                            <button type="submit">Buscar</button>
+                        </td>
+                    </tr>    
+                </tbody>  
+            </table>
         </form>
     </div>
+    <br>
+    <br>
     <div class="lista">
         <table class="tb-topo">
             <thead>
@@ -45,7 +59,7 @@
                 @foreach ($items as $processo)
                     <tr>
                         <td>{{ $processo->id }}</td>
-                        <td>{{ $processo->codigo }}</td>
+                        <td><a href="{{ route('processo.show', $processo) }}">{{ $processo->codigo }}</a></td>
                         <td>{{ $processo->cnj }}</td>
                         <td>{{ $processo->nomereu }}</td>
                         <td>{{ $processo->docreu }}</td>

@@ -1,6 +1,6 @@
 body{
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     background-size: 100%;
 }
 
@@ -35,6 +35,7 @@ header{
 
 .centro{
     min-height: 75vh;
+    background-color: rgb(255, 251, 251);
 }
 
 .lateral-menus{

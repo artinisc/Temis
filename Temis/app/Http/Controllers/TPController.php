@@ -8,6 +8,16 @@ use Illuminate\Http\Request;
 class TPController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -106,7 +116,7 @@ class TPController extends Controller
             return view('telaProcesso.telaProcesso', array('items' => $items));
         }else{
             $items = Processo::orderBy('id','desc')->take(10)->get();
-            return view('telaUsuario.telaUsuario', array('items' => $items));
+            return view('telaProcesso.telaProcesso', array('items' => $items));
         }
     }
 

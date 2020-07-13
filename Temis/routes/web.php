@@ -14,20 +14,17 @@
 Route::get('/', 'InicioController@index');
 Route::get('/home', 'HomeController@index');
 
-Route::get('/processo', 'ProcessoController@index');
 Route::get('/processo/create', 'ProcessoController@create');
-Route::post('/processo/store', 'ProcessoController@store');
-Route::get('/processo/{processo}/show', 'ProcessoController@show');
-Route::get('/processo/{processo}/edit', 'ProcessoController@edit');
-Route::put('/processo/{processo}/update', 'ProcessoController@update');
-Route::delete('/processo/{processo}/destroy', 'ProcessoController@update');
+Route::post('/processo/store', 'ProcessoController@store')->name('processo.store');
+Route::get('/processo/{processo}/show', 'ProcessoController@show')->name('processo.show');
+Route::get('/processo/{processo}/edit', 'ProcessoController@edit')->name('processo.edit');
+Route::put('/processo/{processo}/update', 'ProcessoController@update')->name('processo.update');
 
 Route::get('/tProcesso', 'TPController@index');
 Route::post('/tProcesso/busca', 'TPController@busca')->name('tProcesso.busca');
 
-Route::get('/usuario/{usuario}/edit', 'UsuarioController@edit');
-Route::put('/usuario/{usuario}/update', 'UsuarioController@update');
-Route::delete('/usuario/{usuario}/destroy', 'UsuarioController@update');
+Route::get('/usuario/{usuario}/edit', 'usuarioController@edit')->name('usuario.edit');
+Route::put('/usuario/{usuario}/update', 'usuarioController@update')->name('usuario.update');
 
 Route::get('/tUsuario', 'TUController@index');
 Route::post('/tUsuario/busca', 'TUController@busca')->name('tUsuario.busca');

@@ -12,11 +12,11 @@
             <div class="inf-topo">
                 <table class="tb-topo">
                     <tr>
-                        <td>nome</td>
-                        <td>login</td>
+                        <td>{{ Auth::guard()->user()->name }}</td>
+                        <td>{{ Auth::guard()->user()->email}}</td>
                     </tr>
                     <tr>
-                        <td>equipe</td>
+                        <td>{{ Auth::guard()->user()->departamento}}</td>
                         <td>{{ date('d-m-Y H:i:s') }}</td>
                     </tr>
                 </table>
