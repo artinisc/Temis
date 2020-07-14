@@ -137,19 +137,12 @@
                     </tr>
                     <tr class="linhas-usuario"> 
                         <td> 
-                            <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('Salvar') }}
-                                    </button>
-                                </div>
-                            </div>
+                            <button type="submit">Salvar</button>
                         </td> 
                     </tr>        
                 </tbody>        
             </table>  
         </fieldset>                   
-    </form>
-          
+    </form>    
 </div>
 @endsection

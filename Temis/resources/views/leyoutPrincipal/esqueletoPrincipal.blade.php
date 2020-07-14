@@ -35,13 +35,15 @@
                         <a href="{{ url('/tProcesso') }}" class="btn">Buscar Processo</a>
                     </div>
                 </li>
-                <li class="item" id='usuarios'>
-                    <a href="#usuarios" class="btn">Usuarios</a>
-                    <div class="smenu">
-                        <a href="{{ url('/register') }}" class="btn">Novo Usuario</a>
-                        <a href="{{ url('/tUsuario') }}" class="btn">Buscar Usuario</a>
-                    </div>
-                </li>
+                @if (Auth::guard()->user()->perfil == "Administrador")
+                    <li class="item" id='usuarios'>
+                        <a href="#usuarios" class="btn">Usuarios</a>
+                        <div class="smenu">
+                            <a href="{{ url('/register') }}" class="btn">Novo Usuario</a>
+                            <a href="{{ url('/tUsuario') }}" class="btn">Buscar Usuario</a>
+                        </div>
+                    </li>
+                @endif    
                 <li class="item">
                     <a href="{{ url('/logout') }}" class="btn">Sair</a>
                 </li>
