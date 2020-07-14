@@ -1,0 +1,65 @@
+.pesquisa{
+    float: left;
+    height: 64px;
+    width: 840px;
+    background-color: rgb(44, 44, 44);
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#msg-topo{
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: white;
+}
+
+label{
+    color: white;
+    margin-left: 20px;
+    
+}
+
+input{
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+select{
+    margin-left: 20px;
+}
+
+textarea{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 660px;
+}
+
+button{
+    margin-left: 46px;
+}
+
+.lista{
+    float: left;
+    width: 840px;
+    background-color: rgb(44, 44, 44);
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.tb-topo{
+    float: left;
+    width: 810px;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.tb-topo tr td{
+    color: white;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

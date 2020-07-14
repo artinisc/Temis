@@ -1,11 +1,13 @@
 body{
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    background-color:   rgb(44, 44, 44);
     background-size: 100%;
 }
 
 header{
     height: 90px;
+    background-color: rgb(44, 44, 44);
+    
 }
 
 #logo-topo{
@@ -24,6 +26,7 @@ header{
     width: 60%;
     margin-top: 10px;
     margin-left: 2%;
+    color: aliceblue;
 }
 
 .tb-topo{
@@ -36,19 +39,28 @@ header{
 .centro{
     min-height: 75vh;
     background-color: rgb(255, 251, 251);
+    font-size: 19x;
 }
 
 .lateral-menus{
     float: left;
-    min-height: 75vh;
-    width: 20%;
+    min-height: 72vh;
+    width: 15%;
     min-width: 200px;
+    background-color:   rgb(44, 44, 44);
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
 .btn{
    display: block; 
    padding: 16px 20px;
    position: relative;
+   text-decoration: none;
+   color: aliceblue;
+   font-size: 19px;
 }
 
 .btn:before{
@@ -94,10 +106,9 @@ header{
 }
 
 .conteudo{
-    float: right;
     min-height: 75vh;
-    width: 79%;
     min-width: 500px;
+    background-image: url(../img/fundo.jpg);
 }
 
 footer{
@@ -105,6 +116,7 @@ footer{
 }
 
 .dados-dev{
+    color: white;
     margin-top: 20px;
     width: 80%;
     margin-left: 9%;

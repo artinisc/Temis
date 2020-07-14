@@ -5,5 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="miolo"></div>
+    <div class="miolo">
+        <div id="img-centro"></div>
+    </div>
 @endsection

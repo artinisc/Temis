@@ -13,7 +13,7 @@
                 <table class="campos-usuario">
                     <thead>
                         <tr>
-                            <td>DADOS USUARIO</td>
+                            <td><p id="msg-topo">DADOS USUARIO</p></td>
                         </tr>    
                     </thead>
                     <tbody>

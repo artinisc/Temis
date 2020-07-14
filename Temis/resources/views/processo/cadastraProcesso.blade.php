@@ -12,7 +12,7 @@
                 <table class="campos-processo">
                     <thead>
                         <tr>
-                            <td>DADOS PROCESSO</td>
+                            <td><p id="msg-topo">DADOS PROCESSO</p></td>
                         </tr>    
                     </thead>
                     <tbody>
@@ -48,10 +48,10 @@
                                 <br>
                                 <input name="tipo" type="text">  
                             </td>
-                            <td>
+                            <td colspan="2">
                                 <label for="andamento">Andamento</label>
                                 <br>
-                                <input name="andamento" type="text">  
+                                <input name="andamento" type="text" style="width: 320px">  
                             </td>
                         </tr>   
                         <tr class="linhas-processo"> 
@@ -126,10 +126,10 @@
                             </td>
                         </tr>
                         <tr class="linhas-processo">
-                            <td>
+                            <td colspan="2">
                                 <label for="endreu">Endereço Réu</label>
                                 <br>
-                                <input name="endreu" type="text">  
+                                <input name="endreu" type="text" style="width: 320px">  
                             </td>
                             <td>
                                 <label for="cidadereu">Cidade Réu</label>
@@ -162,6 +162,7 @@
                                     <option value="Morto">Morto</option>
                                 </select>
                                 <br>
+                                <br> 
                                 <br> 
                                 <button type="submit">Salvar</button>
                             </td>

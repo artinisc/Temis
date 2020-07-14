@@ -1,7 +1,13 @@
 .miolo{
-    background-image: url(../img/centro700.png);
     float: left;
-    min-height: 73vh;
-    width: 76%;
+    min-height: 75vh;
+    width: 80%;
+}
+
+#img-centro{
+    background-image: url(../img/centro700.png);
+    min-height: 65vh;
     background-repeat: no-repeat;
+    margin-left: 20%;
+    margin-top: 5%;
 }

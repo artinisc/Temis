@@ -1,0 +1,50 @@
+body{
+    background-image: url(../img/login.jpeg);
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tela-direita{
+    float: left;
+    min-height: 100vh;
+    width: 68%;
+}
+
+.container{
+    float: right;
+    min-height: 100vh;
+    width: 20%;
+    min-width: 300px;
+    background-color: rgba(17, 97, 90, 0.7);
+}
+
+.msg-topo{
+    min-height: 25vh;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+}
+
+#msg-topo{
+    float: right;
+    margin-right: 43%;
+    margin-top: 22%;
+}
+
+.area-login{
+    min-height: 40vh;
+    width: 220px;
+    float: right;
+    margin-right: 5%;
+}
+
+.nome-campos{
+    color: white;
+    font-size: 17px;
+}
+
+.btn-login{
+    float: right;
+    margin-right: 50%;
+}

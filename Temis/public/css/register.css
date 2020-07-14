@@ -1,7 +1,7 @@
-.tela-processo{
+.container{
     float: left;
-    height: 519px;
-    width: 911px;
+    height: 212px;
+    width: 907px;
     background-color: rgb(44, 44, 44);
     margin-left: 2%;
     margin-top: 2%;
@@ -10,19 +10,17 @@
 #msg-topo{
     margin-left: 20px;
     margin-bottom: 0px;
-    margin-top: 0px;
     color: white;
 }
 
 label{
     color: white;
     margin-left: 20px;
+    
 }
 
-p{
+input{
     margin-left: 20px;
-    margin-top: 0px;
-    color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
 }
 
@@ -37,10 +35,5 @@ textarea{
 }
 
 button{
-    margin-left: 46px;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    margin-left: 20px;
 }

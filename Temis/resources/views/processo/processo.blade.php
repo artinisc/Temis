@@ -10,7 +10,7 @@
             <table class="campos-processo">
                 <thead>
                     <tr>
-                        <td>DADOS PROCESSO</td>
+                        <td><h9 id="msg-topo">DADOS PROCESSO</h9></td>
                     </tr>    
                 </thead>
                 <tbody>
@@ -51,10 +51,10 @@
                             <br>
                             <p class="paragrafo-dados">{{ $processo->tipo }}</p>  
                         </td>
-                        <td>
+                        <td colspan="2">
                             <label for="andamento">Andamento</label>
                             <br>
-                            <p class="paragrafo-dados">{{ $processo->andamento }}</p>  
+                            <p class="paragrafo-dados" style="width: 320px">{{ $processo->andamento }}</p>  
                         </td>
                     </tr>   
                     <tr class="linhas-processo"> 
@@ -114,10 +114,10 @@
                         </td>
                     </tr>
                     <tr class="linhas-processo">
-                        <td>
+                        <td colspan="2">
                             <label for="endreu">Endereço Réu</label>
                             <br>
-                            <p class="paragrafo-dados">{{ $processo->endreu }}</p> 
+                            <p class="paragrafo-dados" style="width: 320px">{{ $processo->endreu }}</p> 
                         </td>
                         <td>
                             <label for="cidadereu">Cidade Réu</label>
@@ -139,12 +139,12 @@
                         <td>
                             <label for="descricao">Descricao</label>
                             <br>
-                            <p class="paragrafo-dados">{{ $processo->descricao }}</p>
+                            <p class="paragrafo-dados" style="width: 660px; height: 50px; margin-bottom: 0px;">{!! nl2br($processo->descricao) !!}</p>
                         </td>
                         <td>
                             <label for="status">Status</label>
                             <br>
-                            <p class="paragrafo-dados">{!! nl2br($processo->status) !!}</p>
+                            <p class="paragrafo-dados" >{{ $processo->status }}</p>
                             <button><a href="{{ route('processo.edit', $processo) }}">Editar</a></button>
                         </td>
                     </tr>
