@@ -1,2 +1,4 @@
 # Temis
-Portal de controle de processos juridicos
+Portal web de controle de processos juridicos.
+
+Laravel, PHP.
